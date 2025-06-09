@@ -1,7 +1,7 @@
-# 🎓 Projeto EduCOnnect
+# 🎓 Projeto Edu Connect
 
 ## 📌 Descrição do Projeto  
-O **EduCOnnect** é um sistema web desenvolvido para facilitar o **agendamento de aulas online**, conectando alunos e professores de forma prática e eficiente. Ideal para instituições de ensino ou plataformas de tutoria digital.
+O **Edu Connect** é um sistema web desenvolvido para facilitar o **agendamento de aulas online**, conectando alunos e professores de forma prática e eficiente. Ideal para instituições de ensino ou plataformas de tutoria digital.
 
 ---
 
