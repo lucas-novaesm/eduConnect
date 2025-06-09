@@ -30,10 +30,11 @@ https://github.com/user-attachments/assets/a7f8d7d3-59e0-4f9d-a245-dc7807e53176
 ---
 
 ## 💡 Exemplo de Fluxo
-1. O aluno acessa o sistema e faz login 🔐  
-2. Escolhe o professor e horário desejado 📚  
-3. Realiza o agendamento ✅  
-4. Ambos recebem a confirmação 📩  
+1. O aluno acessa o sistema e faz login 🔐
+2. O aluno faz a compra das Edu Coins 🪙
+3. Escolhe o professor e horário desejado 📚  
+4. Realiza o agendamento ✅  
+5. Ambos recebem a confirmação 📩  
 
 ---
 
