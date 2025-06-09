@@ -21,7 +21,8 @@ https://github.com/user-attachments/assets/a7f8d7d3-59e0-4f9d-a245-dc7807e53176
 ---
 
 ## 🛠️ Tecnologias Utilizadas
-- **PHP** - Backend e lógica da aplicação  
+- **PHP** - Backend e lógica da aplicação
+- **Javascript** - Backend e lógica da aplicação 
 - **MySQL** - Banco de dados  
 - **HTML/CSS** - Interface do usuário  
 - **Git** - Controle de versão  
