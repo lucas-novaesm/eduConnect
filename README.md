@@ -20,13 +20,6 @@ https://github.com/user-attachments/assets/a7f8d7d3-59e0-4f9d-a245-dc7807e53176
 
 ---
 
-## 🗃️ Estrutura do Projeto
-- `index.php`: Página principal do sistema  
-- `educonnect.sql`: Script de criação do banco de dados  
-- `.git/`: Dados de versionamento do projeto  
-
----
-
 ## 🛠️ Tecnologias Utilizadas
 - **PHP** - Backend e lógica da aplicação  
 - **MySQL** - Banco de dados  
