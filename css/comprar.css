@@ -1,0 +1,76 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-color);
+  margin: 0;
+  padding: 2rem;
+  color: var(--text-color);
+}
+
+.comprar-container {
+  max-width: 800px;
+  margin: auto;
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}
+
+.comprar-container h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.comprar-container p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.pacotes {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.pacote-card {
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  padding: 1rem;
+  background: var(--card-bg);
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.pacote-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(var(--primary-rgb), 0.1);
+}
+
+.pacote-card h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.pacote-card p {
+  margin: 0.5rem 0 1rem;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+.pacote-card button {
+  padding: 0.5rem 1rem;
+  background: var(--primary-color);
+  color: var(--button-text);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pacote-card button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}

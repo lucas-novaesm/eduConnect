@@ -1,0 +1,27 @@
+[data-theme="dark"] .message-text a,
+[data-theme="dark"] .chat-message a,
+[data-theme="dark"] .quick-replies a,
+[data-theme="dark"] #chat-input a {
+  color: #45aaf2 !important; /* Azul claro com bom contraste */
+  text-decoration: underline;
+}
+
+[data-theme="dark"] .quick-replies button {
+  color: #e0e0e0 !important;
+}
+
+/* Correção para o texto 'digitar sua dúvida' */
+[data-theme="dark"] .message-content a {
+  color: #45aaf2 !important; /* Azul claro */
+}
+
+/* Garantir contraste adequado para todos os textos em modo escuro */
+[data-theme="dark"] .message-text,
+[data-theme="dark"] .chat-message .message-content {
+  color: #e0e0e0 !important;
+}
+
+/* Correção específica para links dentro de mensagens */
+[data-theme="dark"] a {
+  color: #45aaf2 !important;
+}

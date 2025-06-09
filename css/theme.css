@@ -1,0 +1,403 @@
+/* Light Theme Variables */
+[data-theme="light"] {
+  --primary-color: #005F63;
+  --primary-light: #007F84;
+  --primary-dark: #004B4E;
+  --primary-rgb: 0, 95, 99;
+  
+  --bg-color: #FFFFFF;
+  --card-bg: #FFFFFF;
+  --page-bg: #FFFFFF;
+  --text-color: #000000;
+  --text-secondary: #1A1A1A;
+  --text-light: #333333;
+  --border-color: #CCCCCC;
+  
+  --input-bg: #FFFFFF;
+  --input-border: #999999;
+  --input-text: #000000;
+  --input-placeholder: #666666;
+  
+  --button-text: #FFFFFF;
+  --button-hover: #007F84;
+  
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark Theme Variables */
+[data-theme="dark"] {
+  --primary-color: #00E6F0;
+  --primary-light: #33EEF5;
+  --primary-dark: #00BFC8;
+  --primary-rgb: 0, 230, 240;
+  
+  --bg-color: #000000;
+  --card-bg: #1A1A1A;
+  --page-bg: #000000;
+  --text-color: #FFFFFF;
+  --text-secondary: #E0E0E0;
+  --text-light: #CCCCCC;
+  --border-color: #333333;
+  
+  --input-bg: #262626;
+  --input-border: #404040;
+  --input-text: #FFFFFF;
+  --input-placeholder: #CCCCCC;
+  --input-focus-bg: #333333;
+  --input-focus-border: #00E6F0;
+  
+  --chat-bg: #1A1A1A;
+  --chat-text: #FFFFFF;
+  --chat-secondary: #F0F0F0;
+  --chat-border: #333333;
+  --chat-hover: #262626;
+  
+  --schedule-bg: #1A1A1A;
+  --schedule-text: #FFFFFF;
+  --schedule-secondary: #F0F0F0;
+  --schedule-border: #404040;
+  --schedule-hover: #262626;
+  
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --hover-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  
+  --link-color: #33D9E1;
+  --link-hover: #4DE3EB;
+  --heading-color: #FFFFFF;
+  --label-color: #E0E0E0;
+  --description-color: #CCCCCC;
+  
+  --button-text: #000000;
+  --button-hover: #33D9E1;
+  
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.theme-toggle:hover {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+.theme-toggle:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+.theme-toggle i {
+  font-size: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.theme-toggle:hover i {
+  transform: rotate(15deg);
+}
+
+/* High Contrast Improvements */
+.login-info-panel {
+  background: var(--primary-color) !important;
+  color: #FFFFFF !important;
+}
+
+.login-info-panel h3 {
+  color: #FFFFFF !important;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.login-info-panel p {
+  color: #FFFFFF !important;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.feature-highlight {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Container Styles */
+.form-container,
+.login-page-container {
+  background: var(--card-bg);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+  max-width: 1000px;
+  width: 100%;
+  margin: 1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-header h2 {
+  color: var(--text-color);
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.form-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* Chat Styles */
+.chat-container {
+  background: var(--chat-bg);
+  color: var(--chat-text);
+}
+
+.chat-message {
+  border-color: var(--chat-border);
+}
+
+.chat-message .message-content {
+  color: var(--chat-text);
+}
+
+.chat-message .message-meta {
+  color: var(--chat-secondary);
+}
+
+.chat-input {
+  background: var(--input-bg);
+  border-color: var(--input-border);
+  color: var(--input-text);
+}
+
+/* Schedule Styles */
+.schedule-container {
+  background: var(--schedule-bg);
+  color: var(--schedule-text);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
+}
+
+.schedule-item {
+  background: var(--card-bg);
+  border: 1px solid var(--schedule-border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  transition: all 0.2s ease;
+}
+
+.schedule-item:hover {
+  background: var(--schedule-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-time {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  background: rgba(var(--primary-rgb), 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.schedule-info {
+  margin: 1rem 0;
+}
+
+.schedule-info label {
+  color: var(--text-color);
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+
+.schedule-info span {
+  color: var(--text-secondary);
+}
+
+.schedule-description {
+  color: var(--text-color);
+  line-height: 1.5;
+  margin: 0.5rem 0;
+}
+
+.schedule-status {
+  color: var(--text-color);
+  font-weight: 500;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: rgba(var(--primary-rgb), 0.1);
+  border-radius: 6px;
+  display: inline-block;
+}
+
+/* Links */
+.content-link {
+  color: var(--link-color);
+}
+
+.content-link:hover {
+  color: var(--link-hover);
+}
+
+/* Headings */
+.content-heading {
+  color: var(--heading-color);
+}
+
+/* Form Styles with Enhanced Contrast */
+.modern-form input,
+.modern-form select,
+.modern-form textarea,
+input[type="datetime-local"] {
+  background-color: var(--input-bg);
+  border: 2px solid var(--input-border);
+  color: var(--input-text);
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+.modern-form input:focus,
+.modern-form select:focus,
+.modern-form textarea:focus,
+input[type="datetime-local"]:focus {
+  background-color: var(--input-focus-bg);
+  border-color: var(--input-focus-border);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(var(--primary-rgb), 0.2);
+}
+
+.input-icon-wrapper input {
+  padding-left: 2.5rem;
+}
+
+input[type="datetime-local"] {
+  color: var(--input-text);
+  background-color: var(--input-bg);
+  border: 2px solid var(--input-border);
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+  line-height: 1.5;
+  background-color: var(--input-bg);
+  color: var(--input-text);
+}
+
+textarea::placeholder {
+  color: var(--input-placeholder);
+  opacity: 1;
+}
+
+.modern-form input:focus,
+.modern-form select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(var(--primary-rgb), 0.1);
+}
+
+.modern-form input::placeholder {
+  color: var(--input-placeholder);
+  opacity: 0.8;
+}
+
+.input-icon-wrapper {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.input-icon-wrapper i {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+  font-size: 1.25rem;
+  pointer-events: none;
+}
+
+/* Button Styles with Better Contrast */
+.btn-primary {
+  background: var(--primary-color);
+  color: var(--button-text);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.875rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  transition: all 0.2s ease;
+  letter-spacing: 0.01em;
+}
+
+.btn-primary:hover {
+  background: var(--button-hover);
+  transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--bg-color), 0 0 0 4px var(--primary-color);
+}
+
+.form-footer a {
+  color: var(--text-secondary);
+}
+
+.form-footer a:hover {
+  color: var(--primary-color);
+}
+
+/* Accessibility Improvements */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

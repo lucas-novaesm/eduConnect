@@ -1,0 +1,79 @@
+/* 
+ * CORREÇÃO ESPECÍFICA PARA O HEADER E PROBLEMAS DE ESPAÇAMENTO
+ */
+
+/* Ajuste para HTML e BODY */
+html, body {
+    height: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+}
+
+/* Ajuste para garantir que o topo da página não seja cortado */
+body {
+    padding-top: 80px !important; /* Espaço para o header fixo */
+}
+
+/* Garantir que o header tenha altura adequada e não corte conteúdo */
+.navbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: auto !important;
+    min-height: 70px !important;
+    z-index: 1000 !important;
+    padding: 10px 0 !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+}
+
+/* Ajuste para conteúdo principal */
+main.container {
+    margin-top: 20px !important;
+    padding-top: 20px !important;
+    width: 100% !important;
+    max-width: 1400px !important;
+    box-sizing: border-box !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+/* Ajuste para a seção de boas-vindas */
+.welcome-section {
+    width: 100% !important;
+    padding: 15px !important;
+    margin-bottom: 20px !important;
+    box-sizing: border-box !important;
+}
+
+/* Ajuste para logo */
+.header-logo {
+    max-height: 40px !important;
+}
+
+/* Ajuste para contêiner de navegação */
+.nav-container {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 0 15px !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        padding-top: 60px !important;
+    }
+    
+    .navbar {
+        min-height: 50px !important;
+    }
+    
+    .welcome-section {
+        padding: 10px !important;
+    }
+}

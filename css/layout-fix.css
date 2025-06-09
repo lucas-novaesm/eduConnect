@@ -1,0 +1,156 @@
+/* 
+ * CORREÇÕES ABRANGENTES DE LAYOUT E RESPONSIVIDADE 
+ * Este arquivo corrige problemas de layout, overflow e garante responsividade
+ */
+
+/* CORREÇÕES GERAIS DE LAYOUT */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Garantir que conteúdos não ultrapassem os limites */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* Corrigir container principal */
+main.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
+  overflow: visible;
+}
+
+/* Garantir que elementos flex se ajustem corretamente */
+.row, 
+.flex-container,
+.dashboard-cards,
+.welcome-section,
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Garantir que cards não ultrapassem o limite */
+.card {
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* CORREÇÕES ESPECÍFICAS DE CONTRASTE */
+
+/* Modo claro - melhorar contraste */
+[data-theme="light"] {
+  --text-color: #000000;
+  --text-secondary: #333333;
+  --input-text: #000000;
+  --link-color: #084F55;
+}
+
+/* Modo escuro - melhorar contraste */
+[data-theme="dark"] {
+  --text-color: #ffffff;
+  --text-secondary: #e0e0e0;
+  --primary-color: #4a69bd;
+  --link-color: #45aaf2;
+  --button-text: #ffffff;
+  --button-bg: #4a69bd;
+  --input-text: #ffffff;
+  --input-bg: #333333;
+}
+
+/* Garantir contraste em links */
+a {
+  color: var(--link-color);
+  font-weight: 500;
+}
+
+/* Garantir contraste em botões */
+.btn, button {
+  color: var(--button-text);
+  background-color: var(--primary-color);
+}
+
+/* Garantir contraste em inputs */
+input, textarea, select {
+  color: var(--input-text);
+  background-color: var(--input-bg);
+  border: 1px solid var(--border-color);
+}
+
+/* Garantir que textos são sempre visíveis */
+h1, h2, h3, h4, h5, h6, p, span, label {
+  color: var(--text-color);
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* Ajustes para textos secundários */
+.text-secondary, .text-muted {
+  color: var(--text-secondary) !important;
+}
+
+/* LAYOUT RESPONSIVO */
+@media screen and (max-width: 768px) {
+  main.container {
+    padding: 0.5rem;
+  }
+  
+  .card {
+    margin-bottom: 0.5rem;
+  }
+  
+  .nav-user {
+    order: -1;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+/* Corrigir problema com o botão de tema */
+.theme-toggle {
+  background: transparent !important;
+  border: none !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 5px !important;
+  margin: 0 5px !important;
+  min-width: auto !important;
+  width: auto !important;
+}
+
+/* Corrigir ícones no modo escuro */
+[data-theme="dark"] .fa-moon {
+  display: none;
+}
+
+[data-theme="dark"] .fa-sun {
+  display: inline-block;
+}
+
+[data-theme="light"] .fa-sun {
+  display: none;
+}
+
+[data-theme="light"] .fa-moon {
+  display: inline-block;
+}
+
+/* Corrigir ícones no header */
+.nav-user i {
+  font-size: 1.25rem;
+}
+

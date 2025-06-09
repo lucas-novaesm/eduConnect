@@ -1,0 +1,71 @@
+/* 
+ * CORREÇÃO DEFINITIVA DO PROBLEMA DE CORTE DO NOME DO USUÁRIO
+ * Este arquivo contém correções específicas e com alta prioridade 
+ * para garantir que o nome do usuário seja exibido completamente
+ */
+
+/* Correção para o nome no header */
+.nav-user {
+    width: auto !important;
+    flex-wrap: nowrap !important;
+    overflow: visible !important;
+    white-space: nowrap !important;
+    padding-right: 10px !important;
+}
+
+.user-greeting {
+    width: auto !important;
+    max-width: none !important;
+    overflow: visible !important;
+    white-space: nowrap !important;
+}
+
+.user-greeting a {
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    max-width: none !important;
+    width: auto !important;
+    display: inline-block !important;
+}
+
+/* Correção para o nome na página home */
+.welcome-header {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+}
+
+.welcome-header h1 {
+    white-space: normal !important;
+    overflow: visible !important;
+    word-break: break-word !important;
+    max-width: 100% !important;
+    padding-right: 10px !important;
+    font-size: 1.8rem !important;
+    line-height: 1.2 !important;
+}
+
+/* Correção geral para evitar que elementos sejam cortados */
+html, body {
+    overflow-x: visible !important;
+    max-width: 100% !important;
+}
+
+main.container {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+}
+
+/* Tirar padding dos botões no header para dar mais espaço */
+.theme-toggle {
+    padding: 2px !important;
+}
+
+/* Ajuste responsive */
+@media (max-width: 768px) {
+    .nav-user {
+        width: 100% !important;
+    }
+}

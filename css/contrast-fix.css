@@ -1,0 +1,190 @@
+/* 
+ * CORREÇÕES DE CONTRASTE E LEGIBILIDADE
+ * Este arquivo contém correções específicas para melhorar o contraste e garantir 
+ * que todos os textos sejam legíveis tanto no tema claro quanto no escuro
+ */
+
+/* MODO CLARO - melhorias de contraste */
+[data-theme="light"] {
+  /* Cores de texto mais escuras para melhor contraste */
+  --text-color: #121212;
+  --text-secondary: #333333;
+  --text-light: #555555;
+  
+  /* Links e botões com contraste adequado */
+  --link-color: #084F55;
+  --link-hover: #006064;
+  
+  /* Botões com contraste */
+  --button-text: #ffffff;
+  --button-hover-text: #ffffff;
+  
+  /* Inputs */
+  --input-text: #121212;
+  --input-placeholder: #666666;
+  --input-border: #555555;
+}
+
+/* MODO ESCURO - melhorias de contraste */
+[data-theme="dark"] {
+  /* Cores claras para texto no fundo escuro */
+  --text-color: #f5f5f5;
+  --text-secondary: #e0e0e0;
+  --text-light: #cccccc;
+  
+  /* Links mais brilhantes para destacar */
+  --link-color: #5cbbcf;
+  --link-hover: #7fd1e3;
+  
+  /* Botões com cores contrastantes */
+  --button-text: #ffffff;
+  --button-hover-text: #ffffff;
+  
+  /* Inputs mais visíveis */
+  --input-text: #ffffff;
+  --input-placeholder: #aaaaaa;
+  --input-border: #666666;
+  --input-bg: #333333;
+}
+
+/* CORREÇÕES UNIVERSAIS DE TEXTO */
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color) !important;
+}
+
+/* Parágrafos */
+p, span, div {
+  color: var(--text-color) !important;
+}
+
+/* Links */
+a:not(.btn):not(.nav-link):not(.card) {
+  color: var(--link-color) !important;
+  text-decoration: none;
+}
+
+a:hover:not(.btn):not(.nav-link):not(.card) {
+  color: var(--link-hover) !important;
+  text-decoration: underline;
+}
+
+/* Botões */
+.btn, 
+button:not(.theme-toggle) {
+  color: var(--button-text) !important;
+  background-color: var(--primary-color) !important;
+}
+
+.btn:hover, 
+button:hover:not(.theme-toggle) {
+  color: var(--button-hover-text) !important;
+  background-color: var(--button-hover) !important;
+}
+
+/* Campos de formulário */
+input, textarea, select {
+  color: var(--input-text) !important;
+  background-color: var(--input-bg) !important;
+  border: 1px solid var(--input-border) !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--input-placeholder) !important;
+  opacity: 1;
+}
+
+/* Ícones */
+.fa, .fas, .far, .fab {
+  color: inherit;
+}
+
+/* Cards de dashboard */
+.dashboard-card, .card {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.card-title, .card-header {
+  color: var(--text-color) !important;
+}
+
+.card-text, .card-content {
+  color: var(--text-secondary) !important;
+}
+
+/* Tabelas */
+table {
+  color: var(--text-color) !important;
+}
+
+/* CORREÇÕES ESPECÍFICAS */
+
+/* Ajustes específicos para a navbar */
+.navbar {
+  background-color: var(--header-bg) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.nav-link {
+  color: var(--text-secondary) !important;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+.nav-link.active {
+  color: var(--primary-color) !important;
+}
+
+/* Correção para o nome do usuário */
+.nav-user span {
+  color: var(--primary-color) !important;
+}
+
+/* Ajuste para botão de tema */
+.theme-toggle {
+  color: var(--text-color) !important;
+}
+
+/* Correções para o tema escuro - detalhes específicos */
+[data-theme="dark"] .calendar {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .fc-event {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-light) !important;
+}
+
+[data-theme="dark"] .alert {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+}
+
+/* Ajustes para o tema claro - detalhes específicos */
+[data-theme="light"] .calendar {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+}
+
+[data-theme="light"] .fc-event {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-dark) !important;
+  color: #ffffff !important;
+}
+
+[data-theme="light"] .alert-success {
+  background-color: #d4edda !important;
+  color: #155724 !important;
+  border-color: #c3e6cb !important;
+}
+
+[data-theme="light"] .alert-danger {
+  background-color: #f8d7da !important;
+  color: #721c24 !important;
+  border-color: #f5c6cb !important;
+}

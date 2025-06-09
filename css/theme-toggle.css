@@ -1,0 +1,165 @@
+/* Estilos para o botão de alternância de tema */
+.theme-toggle {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+  transition: background-color 0.2s ease;
+  padding: 8px;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+.theme-toggle:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+.theme-toggle i {
+  font-size: 1.5rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle:hover i {
+  transform: rotate(15deg);
+}
+
+[data-theme="dark"] .theme-toggle i.fa-sun {
+  color: var(--accent-color);
+}
+
+[data-theme="light"] .theme-toggle i.fa-moon {
+  color: var(--primary-dark);
+}
+
+/* Ajustes para melhor visibilidade no dark mode */
+[data-theme="dark"] .nav-link,
+[data-theme="dark"] .menu-item {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .nav-link:hover,
+[data-theme="dark"] .menu-item:hover {
+  color: var(--primary-light);
+}
+
+[data-theme="dark"] .header,
+[data-theme="dark"] .navbar {
+  background-color: var(--card-bg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Ajustes para inputs e forms no dark mode */
+[data-theme="dark"] input,
+[data-theme="dark"] select,
+[data-theme="dark"] textarea {
+  background-color: var(--input-bg);
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] textarea::placeholder {
+  color: var(--text-light);
+}
+
+/* Ajustes para melhorar contraste em cards e componentes */
+[data-theme="dark"] .card,
+[data-theme="dark"] .form-container,
+[data-theme="dark"] .login-page-container {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+/* Ajustes para os botões no modo escuro */
+[data-theme="dark"] button,
+[data-theme="dark"] .btn-primary {
+  background-color: var(--primary-color);
+  color: var(--button-text);
+}
+
+[data-theme="dark"] button:hover,
+[data-theme="dark"] .btn-primary:hover {
+  background-color: var(--primary-light);
+}
+
+/* Botão de alternância de tema embutido no header */
+.theme-toggle {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+  transition: background-color 0.2s ease;
+  position: relative; /* <-- importante para manter dentro do fluxo */
+  z-index: 1;
+}
+
+
+.theme-toggle:hover {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+.theme-toggle:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+.theme-toggle i {
+  font-size: 1.5rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle:hover i {
+  transform: rotate(15deg);
+}
+
+[data-theme="dark"] .theme-toggle i.fa-sun {
+  color: var(--accent-color);
+}
+
+[data-theme="light"] .theme-toggle i.fa-moon {
+  color: var(--primary-dark);
+}
+
+/* Área do usuário com os botões organizados */
+.nav-user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  overflow-x: visible;
+  max-width: 100%;
+}
+
+.logout-link {
+  margin-left: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

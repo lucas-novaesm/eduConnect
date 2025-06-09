@@ -1,0 +1,201 @@
+/* Correções críticas para problemas de contraste */
+
+/* CORREÇÃO PARA O CAMPO DE DATA */
+input[type="datetime-local"],
+input[type="date"],
+input[type="time"],
+select,
+select.modern-select,
+#horario {
+    background-color: #333333 !important;
+    color: white !important;
+    border: 2px solid #5c5c5c !important;
+    padding: 12px 15px !important;
+    border-radius: 8px !important;
+}
+
+/* CORREÇÃO PARA O CAMPO DE MENSAGEM */
+#chat-input,
+input[type="text"],
+textarea {
+    background-color: #333333 !important;
+    color: white !important;
+    border: 2px solid #5c5c5c !important;
+}
+
+/* Correção para o calendário */
+::-webkit-calendar-picker-indicator {
+    filter: invert(1) brightness(1.5) !important;
+    background-color: transparent !important;
+}
+
+/* Garantir contraste em todos os estados */
+input:focus, 
+select:focus, 
+textarea:focus,
+#chat-input:focus {
+    border-color: #00E6F0 !important;
+    background-color: #404040 !important;
+    box-shadow: 0 0 0 2px rgba(0, 230, 240, 0.3) !important;
+    outline: none !important;
+}
+
+/* Corrigir placeholders */
+::placeholder {
+    color: #DDDDDD !important;
+    opacity: 1 !important;
+}
+
+/* Ajustar container de inputs de chat */
+.chat-input-container {
+    background-color: transparent !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 8px !important;
+    border-top: 1px solid #4a4a4a !important;
+}
+
+/* Correção para cores do texto de input */
+#chat-input, .chat-messages, .message-text {
+    color: white !important;
+}
+
+/* CORREÇÃO PARA RESPOSTAS DO BOT NO MODO NORMAL */
+.message-content {
+    color: #333333 !important;
+    background-color: #f0f0f0 !important;
+}
+
+/* Garantir que as mensagens do bot sejam visíveis no modo normal */
+[data-theme="light"] .message-content,
+.message-content {
+    color: #333333 !important;
+}
+
+/* Garantir que o texto da mensagem seja visível */
+.message-text {
+    color: #333333 !important;
+}
+
+/* Garantir que as mensagens enviadas pelo usuário sejam visíveis */
+.chat-message.sent .message-content {
+    color: white !important;
+    background-color: #2563eb !important;
+}
+
+.chat-message.sent .message-text {
+    color: white !important;
+}
+
+/* Garantir que o autor da mensagem seja visível */
+.message-author {
+    color: #333333 !important;
+    font-weight: 600 !important;
+}
+
+.chat-message.sent .message-author {
+    color: white !important;
+}
+
+/* Garantir que o texto da mensagem seja visível no modo escuro */
+[data-theme="dark"] .message-content {
+    color: white !important;
+    background-color: #333333 !important;
+}
+
+/* Garantir que o autor da mensagem seja visível no modo escuro */
+[data-theme="dark"] .message-author {
+    color: white !important;
+}
+
+/* Correção para evitar corte de conteúdo em telas menores */
+html, body {
+    overflow-x: visible !important;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+main.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+}
+
+.welcome-section {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.welcome-card {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.dashboard-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.dashboard-card {
+    flex: 1 1 300px;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+/* Media query para dispositivos menores */
+@media (max-width: 768px) {
+    .dashboard-cards {
+        flex-direction: column;
+    }
+
+    .dashboard-card {
+        flex-basis: 100%;
+    }
+}
+
+/* Correção específica para o nome de usuário */
+.user-greeting {
+    white-space: nowrap;
+    overflow: visible;
+    max-width: none;
+    margin-right: 10px;
+}
+
+.welcome-header h1 {
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+/* Ajustes de espaçamento na barra de navegação */
+.nav-user {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0 10px;
+}
+
+/* Garantir que os links da barra de navegação não sejam cortados */
+.nav-links {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: thin;
+}
+
+/* Ajuste do título nas páginas - correção definitiva */
+h1, .welcome-header h1 {
+    white-space: normal !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+    font-size: 1.8rem !important;
+    line-height: 1.2 !important;
+    word-break: break-word !important;
+}
